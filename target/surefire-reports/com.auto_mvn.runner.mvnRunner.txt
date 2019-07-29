@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.auto_mvn.runner.mvnRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 21.55 sec <<< FAILURE! - in com.auto_mvn.runner.mvnRunner
+Login to Bookingcom works or not(Sanity test of Booking.com)  Time elapsed: 21.242 sec  <<< FAILURE!
+java.lang.AssertionError: First Name not found!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepDefinition.browserTests.i_am_able_to_access_my_homepage(browserTests.java:49)
+	at ?.I am able to access my Homepage(file:features/browser.feature:27)
+

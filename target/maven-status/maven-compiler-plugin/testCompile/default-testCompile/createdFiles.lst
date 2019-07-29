@@ -1,0 +1,3 @@
+com\auto_mvn\runner\mvnRunner.class
+stepDefinition\automation_libraries.class
+stepDefinition\browserTests.class

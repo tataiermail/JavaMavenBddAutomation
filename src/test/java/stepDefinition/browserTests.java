@@ -41,12 +41,12 @@ public class browserTests {
 	@Then("^I am able to access my Homepage$")
 	public void i_am_able_to_access_my_homepage() throws Exception {
 		System.out.println("In Then");
-		Thread.sleep(3500); //wait few sec till next page to provide password is loaded
+		Thread.sleep(5000); //wait few sec till next page to provide password is loaded
 		//wd.findElement(By.xpath("//span[text()='Sign in']")).click();
 		//String bodyText = wd.findElement(By.tagName("body")).getText();
 		String bodyText = wd.findElement(By.xpath("//span[contains(@class, 'user_firstname')]")).getText();
 		System.out.println(bodyText);
-		Assert.assertTrue("First Name not found!", bodyText.contains("Susmita1"));
+		Assert.assertTrue("First Name not found!", bodyText.contains("Susmita"));
 		wd.close();
 	}
 	

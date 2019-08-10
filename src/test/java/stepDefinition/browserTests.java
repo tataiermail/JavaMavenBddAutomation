@@ -1,6 +1,7 @@
 package stepDefinition;
 
 import cucumber.api.PendingException;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,7 +11,7 @@ import org.openqa.selenium.*;
 
 public class browserTests {
 
-	WebDriver wd = automation_libraries.SelChromeDriverInit();
+	WebDriver wd = automation_libraries.SelDriverInit("chrome");
 	
 	@Given("^I have opened the website$")
 	public void i_have_opened_the_website() throws Exception {

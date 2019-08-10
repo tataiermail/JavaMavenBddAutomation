@@ -30,7 +30,7 @@
                     <!-- You can define more System.getProperty() here -->
                   </systemPropertyVariables>
                   <includes>
-                  	<exclude>**/*mvnRunner.java</exclude>
+                  	<exclude>**/*junitRunner.java</exclude>
                   </includes>
                 </configuration>
            </plugin>

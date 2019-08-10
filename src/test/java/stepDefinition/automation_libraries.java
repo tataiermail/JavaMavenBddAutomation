@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class automation_libraries {
 	
 	public static WebDriver SelChromeDriverInit() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\tatai\\Dropbox\\Career\\Skills\\Java_misc\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("platform", "Windows XP");
 		caps.setCapability("version", "66.0");

@@ -8,17 +8,20 @@ import io.cucumber.java.en.When;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class browserTests {
 
-	WebDriver wd = automation_libraries.SelDriverInit("chrome");
+	WebDriver wd = automation_libraries.SelDriverInit("Grid-Linux-Firefox");
 	
 	@Given("^I have opened the website$")
 	public void i_have_opened_the_website() throws Exception {
 		System.out.println("In Given");
 		//Initialize the driver as Global above...
 		wd.get("https://www.booking.com"); // Open URL
-		wd.manage().window().maximize();
+		wd.manage().window().maximize(); 
 		Thread.sleep(2500);
 		wd.findElement(By.xpath("//span[text()='Sign in']")).click();
 		//relative Xpath explanation: //type[property='value' or/and <repeat..>]

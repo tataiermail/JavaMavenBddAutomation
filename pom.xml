@@ -25,13 +25,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18</version>
                 <configuration>
-                  <systemPropertyVariables>
-                    <!-- Your Project Site Url -->
-                    <!-- You can define more System.getProperty() here -->
-                  </systemPropertyVariables>
-                  <includes>
-                  	<exclude>**/*junitRunner.java</exclude>
-                  </includes>
+                	<parallel>methods</parallel>
+                	<threadCount>10</threadCount>
+                  	<systemPropertyVariables>
+                    	<!-- Your Project Site Url -->
+                    	<!-- You can define more System.getProperty() here -->
+                  	</systemPropertyVariables>
+                  	<includes>
+                  		<exclude>**/*junitRunner.java</exclude>
+                  	</includes>
                 </configuration>
            </plugin>
 	      
@@ -64,6 +66,12 @@
 	    <artifactId>junit</artifactId>
 	    <version>4.12</version>
 	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-server</artifactId>
+	    <version>3.141.59</version>
 	</dependency>
   	
   	<dependency>

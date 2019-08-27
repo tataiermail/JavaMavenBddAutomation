@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.auto_mvn.runner.mvnRunner
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 36.634 sec - in com.auto_mvn.runner.mvnRunner

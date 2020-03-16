@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class browserTests {
 
-	WebDriver wd = automation_libraries.SelDriverInit("Grid-Linux-Firefox");
+	WebDriver wd = automation_libraries.SelDriverInit("Firefox");
 	
 	@Given("^I have opened the website$")
 	public void i_have_opened_the_website() throws Exception {
